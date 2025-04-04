@@ -1,0 +1,4 @@
+SELECT COUNT(*) AS count 
+FROM "User" 
+WHERE "mobileNumber" = {{ InputMobile.dialCode + InputMobile.text }} 
+AND "mobileNumber" != {{ UsersTable.selectedRow.mobileNumber }};

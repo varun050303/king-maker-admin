@@ -1,0 +1,3 @@
+SELECT COUNT(*) AS total_store_incharges
+FROM "User"
+WHERE "role" = 'STORE_MANAGER';
