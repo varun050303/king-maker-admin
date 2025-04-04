@@ -1,0 +1,9 @@
+SELECT 
+  id, 
+  name, 
+  "mobileNumber", 
+  role, 
+  "createdAt",
+	"updatedAt"
+FROM "User"
+ORDER BY "createdAt" DESC;

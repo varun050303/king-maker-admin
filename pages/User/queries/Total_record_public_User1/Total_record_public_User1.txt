@@ -1,1 +1,0 @@
-SELECT COUNT(*) from public."User" where "mobileNumber" ilike '%{{Table1.searchText}}%';

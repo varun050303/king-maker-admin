@@ -1,16 +1,16 @@
 {
-  "gitSyncId": "67efa8d213c5ee130186fbb2_c41836bd-4c74-4cad-975f-57d4978e732e",
-  "id": "User_Total_record_public_User1",
+  "gitSyncId": "67efa8d213c5ee130186fbb2_fcd6ab37-9241-4b72-94bc-38fbcf0562ee",
+  "id": "Dashboard_get_list_of_users",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT COUNT(*) from public.\"User\" where \"mobileNumber\" ilike '%{{Table1.searchText}}%';",
+      "body": "SELECT \n  id, \n  name, \n  \"mobileNumber\", \n  role, \n  \"createdAt\",\n\t\"updatedAt\"\nFROM \"User\"\nORDER BY \"createdAt\" DESC;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": false
+          "value": true
         }
       ],
       "timeoutInMillisecond": 10000
@@ -22,14 +22,10 @@
       "name": "Untitled datasource 1",
       "pluginId": "postgres-plugin"
     },
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
-    "executeOnLoad": false,
-    "name": "Total_record_public_User1",
-    "pageId": "User",
+    "dynamicBindingPathList": [],
+    "executeOnLoad": true,
+    "name": "get_list_of_users",
+    "pageId": "Dashboard",
     "userSetOnLoad": false
   }
 }

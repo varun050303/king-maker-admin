@@ -1,0 +1,5 @@
+SELECT 
+  SUM("businessPoints") as total_business_points,
+  SUM("referralPoints") as total_referral_points,
+  SUM("lockedPoints") as total_locked_points
+FROM "Wallet";

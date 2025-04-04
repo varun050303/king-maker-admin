@@ -1,0 +1,8 @@
+SELECT 
+  wr.id, wr.amount, wr.status, wr."createdAt",
+  u.name as user_name, u."mobileNumber"
+FROM "WithdrawRequest" wr
+JOIN "User" u ON wr."userId" = u.id
+WHERE wr."status" = 'PENDING'
+ORDER BY wr."createdAt" DESC
+LIMIT 10;

@@ -1,0 +1,3 @@
+UPDATE "User"
+SET role = '{{DropdownRole.selectedOptionValue}}'
+WHERE "mobileNumber" = '{{Table1.selectedRow.mobileNumber}}';

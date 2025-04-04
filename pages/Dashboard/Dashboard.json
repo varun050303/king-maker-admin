@@ -6,7 +6,7 @@
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 620,
+          "bottomRow": 790,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
@@ -27,7 +27,7 @@
         }
       }
     ],
-    "name": "User",
-    "slug": "user"
+    "name": "Dashboard",
+    "slug": "dashboard"
   }
 }
