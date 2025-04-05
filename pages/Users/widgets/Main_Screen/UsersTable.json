@@ -117,7 +117,7 @@
   "mobileRightColumn": 35,
   "mobileTopRow": 8,
   "needsErrorInfo": false,
-  "onRowSelected": "{{get_wallet_info.run();\nget_referrer_name.run()}}",
+  "onRowSelected": "{{get_wallet_info.run();\nget_referrer_name.run();\nget_user_bank_details.run()}}",
   "originalBottomRow": 72,
   "originalTopRow": 7,
   "parentColumnSpace": 15.3125,

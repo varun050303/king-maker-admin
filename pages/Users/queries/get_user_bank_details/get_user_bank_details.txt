@@ -1,0 +1,3 @@
+SELECT "bankDetails"
+FROM "User"
+WHERE id = {{UsersTable.selectedRow.id}};

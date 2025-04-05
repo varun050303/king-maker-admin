@@ -48,7 +48,7 @@
   "mobileRightColumn": 23,
   "mobileTopRow": 11,
   "needsErrorInfo": false,
-  "onOptionChange": "{{update_user_role.run().then(() => {\n  showAlert('User role updated successfully', 'success');\n  get_list_of_users.run();\n}).catch(() => {\n  showAlert('An Error Occured', 'error');\n  resetWidget(\"Table1\", true);\n});}}",
+  "onOptionChange": "{{update_user_role.run().then(() => {\n  showAlert('User role updated successfully', 'success');\n  get_list_of_users.run();\n  get_store_count.run();\n}).catch(() => {\n  showAlert('An Error Occured', 'error');\n  resetWidget(\"Table1\", true);\n});}}",
   "optionLabel": "label",
   "optionValue": "value",
   "parentColumnSpace": 4.6875,
