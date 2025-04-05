@@ -43,7 +43,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 61,
   "shouldTruncate": false,
-  "text": "Referred By: {{get_referrer_name.data[0].name|| 'None'}}",
+  "text": "Referred By: {{get_referrer_name.data[0]?.name|| 'None'}}",
   "textAlign": "LEFT",
   "textColor": "#71717a",
   "topRow": 8,

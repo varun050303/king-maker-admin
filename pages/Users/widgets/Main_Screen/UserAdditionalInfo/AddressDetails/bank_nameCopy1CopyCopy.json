@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 9,
+  "bottomRow": 17,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -33,23 +33,23 @@
   "mobileRightColumn": 16,
   "mobileTopRow": 5,
   "needsErrorInfo": false,
-  "originalBottomRow": 9,
-  "originalTopRow": 5,
+  "originalBottomRow": 17,
+  "originalTopRow": 13,
   "overflow": "NONE",
   "parentColumnSpace": 4.1785430908203125,
-  "parentId": "0k4ibgnvqo",
+  "parentId": "urv2klwy3k",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 61,
+  "rightColumn": 62,
   "shouldTruncate": false,
-  "text": "Bank Name : {{get_user_bank_details.data[0].bankDetails?.bankName || 'N/A'}}",
+  "text": "State: {{ get_user_address_details.data[0]?.state ?? 'N/A' }}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 5,
+  "topRow": 13,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "o25d8v4du5",
-  "widgetName": "bank_name"
+  "widgetId": "w18ojrm8qx",
+  "widgetName": "bank_nameCopy1CopyCopy"
 }

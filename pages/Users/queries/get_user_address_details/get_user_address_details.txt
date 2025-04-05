@@ -1,0 +1,8 @@
+SELECT 
+  "address",
+  "city",
+  "state",
+  "country",
+  "pincode"
+FROM "User"
+WHERE "mobileNumber" = {{ UsersTable.selectedRow.mobileNumber }};
