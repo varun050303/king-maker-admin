@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "67efa8d213c5ee130186fbb2_fcd6ab37-9241-4b72-94bc-38fbcf0562ee",
-  "id": "Users_get_list_of_users",
+  "gitSyncId": "67efa8d213c5ee130186fbb2_c977d4ef-0e29-4e79-b52c-729e8c1a7561",
+  "id": "Users_get_wallet_info",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT \n  id, \n  name, \n  \"mobileNumber\", \n  role, \n  \"createdAt\",\n\t\"updatedAt\",\n\t\"referredById\"\nFROM \"User\"\nORDER BY \"createdAt\" DESC;",
+      "body": "SELECT * FROM \"Wallet\"\nWHERE \"userId\" = {{ UsersTable.selectedRow.id }}",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,9 +22,13 @@
       "name": "Untitled datasource 1",
       "pluginId": "postgres-plugin"
     },
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "executeOnLoad": true,
-    "name": "get_list_of_users",
+    "name": "get_wallet_info",
     "pageId": "Users",
     "userSetOnLoad": false
   }

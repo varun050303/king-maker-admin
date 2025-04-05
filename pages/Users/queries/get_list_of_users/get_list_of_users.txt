@@ -4,6 +4,7 @@ SELECT
   "mobileNumber", 
   role, 
   "createdAt",
-	"updatedAt"
+	"updatedAt",
+	"referredById"
 FROM "User"
 ORDER BY "createdAt" DESC;

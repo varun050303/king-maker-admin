@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 14,
+  "bottomRow": 11,
   "boxShadow": "none",
   "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( UsersTable.selectedRow.role))(DropdownRole.options, DropdownRole.serverSideFiltering) }}",
   "dynamicBindingPathList": [
@@ -60,7 +60,7 @@
   "rightColumn": 61,
   "serverSideFiltering": false,
   "sourceData": "[\n  {\n    \"label\": \"Customer\",\n    \"value\": \"CUSTOMER\"\n  },\n  {\n    \"label\": \"Admin\",\n    \"value\": \"ADMIN\"\n  },\n  {\n    \"label\": \"Store Manager\",\n    \"value\": \"STORE_MANAGER\"\n  }\n]",
-  "topRow": 7,
+  "topRow": 4,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "7ymjwl592q",

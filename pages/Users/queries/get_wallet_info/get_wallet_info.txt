@@ -1,0 +1,2 @@
+SELECT * FROM "Wallet"
+WHERE "userId" = {{ UsersTable.selectedRow.id }}
