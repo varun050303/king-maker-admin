@@ -24,6 +24,10 @@
     {
       "id": "Login",
       "isDefault": false
+    },
+    {
+      "id": "Recent Transactions",
+      "isDefault": false
     }
   ],
   "unpublishedApplicationDetail": {

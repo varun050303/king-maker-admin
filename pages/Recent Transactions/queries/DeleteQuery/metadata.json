@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "67efa8d213c5ee130186fbb2_fcd6ab37-9241-4b72-94bc-38fbcf0562ee",
-  "id": "Users_get_list_of_users",
+  "gitSyncId": "67efa8d213c5ee130186fbb2_a16bb180-c0b7-43c8-8cd2-f61cbdb3504a",
+  "id": "Recent Transactions_DeleteQuery",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT \n  id, \n  name, \n  \"mobileNumber\", \n  role,\n\tstatus,\n  \"createdAt\",\n\t\"updatedAt\",\n\t\"referredById\",\n\t\"password\"\nFROM \"User\"\nORDER BY \"createdAt\" DESC;",
+      "body": "DELETE FROM public.\"Transaction\"\n  WHERE \"id\" = {{data_table.triggeredRow.id}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,10 +22,9 @@
       "name": "Untitled datasource 1",
       "pluginId": "postgres-plugin"
     },
-    "dynamicBindingPathList": [],
-    "executeOnLoad": true,
-    "name": "get_list_of_users",
-    "pageId": "Users",
+    "executeOnLoad": false,
+    "name": "DeleteQuery",
+    "pageId": "Recent Transactions",
     "userSetOnLoad": false
   }
 }

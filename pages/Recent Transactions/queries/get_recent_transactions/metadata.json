@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "67efa8d213c5ee130186fbb2_fcd6ab37-9241-4b72-94bc-38fbcf0562ee",
-  "id": "Users_get_list_of_users",
+  "gitSyncId": "67efa8d213c5ee130186fbb2_9b68558a-6324-48d1-8217-6fe4c77868e1",
+  "id": "Recent Transactions_get_recent_transactions",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT \n  id, \n  name, \n  \"mobileNumber\", \n  role,\n\tstatus,\n  \"createdAt\",\n\t\"updatedAt\",\n\t\"referredById\",\n\t\"password\"\nFROM \"User\"\nORDER BY \"createdAt\" DESC;",
+      "body": "SELECT \n  t.id, t.type, t.status, t.amount, t.\"transactionCategory\",\n  t.\"createdAt\", u.name as user_name, u.\"mobileNumber\", t.source\nFROM \"Transaction\" t\nJOIN \"Wallet\" w ON t.\"walletId\" = w.id\nJOIN \"User\" u ON w.\"userId\" = u.id\nORDER BY t.\"createdAt\" DESC\nLIMIT 10;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -24,8 +24,8 @@
     },
     "dynamicBindingPathList": [],
     "executeOnLoad": true,
-    "name": "get_list_of_users",
-    "pageId": "Users",
+    "name": "get_recent_transactions",
+    "pageId": "Recent Transactions",
     "userSetOnLoad": false
   }
 }

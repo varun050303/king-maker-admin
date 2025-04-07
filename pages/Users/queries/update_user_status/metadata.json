@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "67efa8d213c5ee130186fbb2_fcd6ab37-9241-4b72-94bc-38fbcf0562ee",
-  "id": "Users_get_list_of_users",
+  "gitSyncId": "67efa8d213c5ee130186fbb2_63aa2206-dcf1-4c6d-826b-44e1cd256f94",
+  "id": "Users_update_user_status",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT \n  id, \n  name, \n  \"mobileNumber\", \n  role,\n\tstatus,\n  \"createdAt\",\n\t\"updatedAt\",\n\t\"referredById\",\n\t\"password\"\nFROM \"User\"\nORDER BY \"createdAt\" DESC;",
+      "body": "UPDATE \"User\"\nSET status = '{{DropdownStatus.selectedOptionValue}}'\nWHERE \"mobileNumber\" = '{{UsersTable.selectedRow.mobileNumber}}';",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,9 +22,13 @@
       "name": "Untitled datasource 1",
       "pluginId": "postgres-plugin"
     },
-    "dynamicBindingPathList": [],
-    "executeOnLoad": true,
-    "name": "get_list_of_users",
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
+    "executeOnLoad": false,
+    "name": "update_user_status",
     "pageId": "Users",
     "userSetOnLoad": false
   }

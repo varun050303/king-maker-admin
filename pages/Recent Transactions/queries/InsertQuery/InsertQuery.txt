@@ -1,0 +1,24 @@
+INSERT INTO public."Transaction" (
+	"id",
+	"id",
+	"walletId",
+	"type",
+	"status",
+	"amount",
+	"source",
+	"transactionCategory",
+	"createdAt",
+	"updatedAt",
+	"referralRewardId")
+VALUES (
+	'{{insert_form.formData.id}}',
+	'{{insert_form.formData.id}}',
+	'{{insert_form.formData.walletId}}',
+	'{{insert_form.formData.type}}',
+	'{{insert_form.formData.status}}',
+	'{{insert_form.formData.amount}}',
+	'{{insert_form.formData.source}}',
+	'{{insert_form.formData.transactionCategory}}',
+	'{{insert_form.formData.createdAt}}',
+	'{{insert_form.formData.updatedAt}}',
+	'{{insert_form.formData.referralRewardId}}');

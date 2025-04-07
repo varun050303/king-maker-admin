@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 31,
+  "bottomRow": 37,
   "boxShadow": "none",
   "defaultText": "",
   "dynamicBindingPathList": [
@@ -54,7 +54,7 @@
   "shouldAllowAutofill": true,
   "showStepArrows": false,
   "tooltip": "User will not be able to use his old password after this action.",
-  "topRow": 24,
+  "topRow": 30,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "zo1oe5izes",

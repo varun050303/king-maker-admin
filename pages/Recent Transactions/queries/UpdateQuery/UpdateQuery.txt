@@ -1,0 +1,12 @@
+UPDATE public."Transaction" SET
+		"id" = '{{update_form.fieldState.id.isVisible ? update_form.formData.id : update_form.sourceData.id}}',
+		"walletId" = '{{update_form.fieldState.walletId.isVisible ? update_form.formData.walletId : update_form.sourceData.walletId}}',
+    "type" = '{{update_form.fieldState.type.isVisible ? update_form.formData.type : update_form.sourceData.type}}',
+		"status" = '{{update_form.fieldState.status.isVisible ? update_form.formData.status : update_form.sourceData.status}}',
+		"amount" = '{{update_form.fieldState.amount.isVisible ? update_form.formData.amount : update_form.sourceData.amount}}',
+		"source" = '{{update_form.fieldState.source.isVisible ? update_form.formData.source : update_form.sourceData.source}}',
+		"transactionCategory" = '{{update_form.fieldState.transactionCategory.isVisible ? update_form.formData.transactionCategory : update_form.sourceData.transactionCategory}}',
+		"createdAt" = '{{update_form.fieldState.createdAt.isVisible ? update_form.formData.createdAt : update_form.sourceData.createdAt}}',
+		"updatedAt" = '{{update_form.fieldState.updatedAt.isVisible ? update_form.formData.updatedAt : update_form.sourceData.updatedAt}}',
+		"referralRewardId" = '{{update_form.fieldState.referralRewardId.isVisible ? update_form.formData.referralRewardId : update_form.sourceData.referralRewardId}}'
+WHERE "id" = {{data_table.selectedRow.id}};
