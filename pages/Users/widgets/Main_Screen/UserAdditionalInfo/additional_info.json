@@ -45,7 +45,7 @@
   "shouldTruncate": false,
   "text": "Additional Info of : {{UsersTable.selectedRow.name}}",
   "textAlign": "LEFT",
-  "textColor": "#71717a",
+  "textColor": "#231f20",
   "topRow": 0,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",

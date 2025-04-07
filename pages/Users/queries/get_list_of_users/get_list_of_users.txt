@@ -5,6 +5,7 @@ SELECT
   role, 
   "createdAt",
 	"updatedAt",
-	"referredById"
+	"referredById",
+	"password"
 FROM "User"
 ORDER BY "createdAt" DESC;

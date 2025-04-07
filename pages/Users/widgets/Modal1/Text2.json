@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 21,
+  "bottomRow": 5,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -11,45 +11,38 @@
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "text"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "0.875rem",
-  "fontStyle": "",
+  "fontSize": "1.25rem",
+  "fontStyle": "BOLD",
   "isLoading": false,
   "isVisible": true,
-  "key": "tmtygzizfw",
-  "leftColumn": 0,
+  "key": "aku9st88h4",
+  "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 9,
-  "mobileLeftColumn": 0,
-  "mobileRightColumn": 16,
-  "mobileTopRow": 5,
+  "mobileBottomRow": 5,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 41,
+  "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "originalBottomRow": 21,
-  "originalTopRow": 17,
   "overflow": "NONE",
-  "parentColumnSpace": 4.1785430908203125,
-  "parentId": "0k4ibgnvqo",
-  "parentRowSpace": 10,
+  "parentId": "4imx5xnpp4",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 61,
+  "rightColumn": 41,
   "shouldTruncate": false,
-  "text": "Account Number: {{get_user_bank_details.data[0].bankDetails?.accountNumber || 'N/A'}}",
+  "text": "Warning",
   "textAlign": "LEFT",
-  "textColor": "#231F20",
-  "topRow": 17,
+  "textColor": "#ef4444",
+  "topRow": 1,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "nnd5v7yl98",
-  "widgetName": "bank_account_number"
+  "widgetId": "ve94aqauv3",
+  "widgetName": "Text2"
 }
