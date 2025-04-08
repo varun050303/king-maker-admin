@@ -1,8 +1,14 @@
 SELECT 
-  t.id, t.type, t.status, t.amount, t."transactionCategory",
-  t."createdAt", u.name as user_name, u."mobileNumber", t.source
+  t.id, 
+  t.type, 
+  t.status, 
+  t.amount, 
+  t."transactionCategory",
+  t."createdAt", 
+  u.name as user_name, 
+  u."mobileNumber", 
+  t.source
 FROM "Transaction" t
 JOIN "Wallet" w ON t."walletId" = w.id
 JOIN "User" u ON w."userId" = u.id
-ORDER BY t."createdAt" DESC
-LIMIT 10;
+ORDER BY t."createdAt" DESC;

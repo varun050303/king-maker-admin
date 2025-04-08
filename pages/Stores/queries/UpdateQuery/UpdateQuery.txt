@@ -1,0 +1,13 @@
+UPDATE public."Store" SET
+		"id" = '{{update_form.fieldState.id.isVisible ? update_form.formData.id : update_form.sourceData.id}}',
+		"name" = '{{update_form.fieldState.name.isVisible ? update_form.formData.name : update_form.sourceData.name}}',
+    "address" = '{{update_form.fieldState.address.isVisible ? update_form.formData.address : update_form.sourceData.address}}',
+		"city" = '{{update_form.fieldState.city.isVisible ? update_form.formData.city : update_form.sourceData.city}}',
+		"state" = '{{update_form.fieldState.state.isVisible ? update_form.formData.state : update_form.sourceData.state}}',
+		"country" = '{{update_form.fieldState.country.isVisible ? update_form.formData.country : update_form.sourceData.country}}',
+		"pincode" = '{{update_form.fieldState.pincode.isVisible ? update_form.formData.pincode : update_form.sourceData.pincode}}',
+		"latitude" = '{{update_form.fieldState.latitude.isVisible ? update_form.formData.latitude : update_form.sourceData.latitude}}',
+		"longitude" = '{{update_form.fieldState.longitude.isVisible ? update_form.formData.longitude : update_form.sourceData.longitude}}',
+		"managerId" = '{{update_form.fieldState.managerId.isVisible ? update_form.formData.managerId : update_form.sourceData.managerId}}',
+		"createdAt" = '{{update_form.fieldState.createdAt.isVisible ? update_form.formData.createdAt : update_form.sourceData.createdAt}}'
+	WHERE "id" = {{data_table.selectedRow.id}};

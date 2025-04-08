@@ -1,0 +1,28 @@
+INSERT INTO public."Store" (
+	"id",
+	"id",
+	"name",
+	"address",
+	"city",
+	"state",
+	"country",
+	"pincode",
+	"latitude",
+	"longitude",
+	"managerId",
+	"createdAt"
+)
+VALUES (
+	'{{insert_form.formData.id}}',
+	'{{insert_form.formData.id}}',
+	'{{insert_form.formData.name}}',
+	'{{insert_form.formData.address}}',
+	'{{insert_form.formData.city}}',
+	'{{insert_form.formData.state}}',
+	'{{insert_form.formData.country}}',
+	'{{insert_form.formData.pincode}}',
+	'{{insert_form.formData.latitude}}',
+	'{{insert_form.formData.longitude}}',
+	'{{insert_form.formData.managerId}}',
+	'{{insert_form.formData.createdAt}}'
+);

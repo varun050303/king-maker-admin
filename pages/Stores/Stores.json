@@ -1,24 +1,24 @@
 {
-  "gitSyncId": "67efa8d213c5ee130186fbb2_afc5b339-661e-4843-9326-8c570800c7c2",
+  "gitSyncId": "67f0feb2cbfcca5f38e990b1_c765c3e3-15a4-4e4e-8a60-b8e301f22b65",
   "unpublishedPage": {
     "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 1292,
+          "bottomRow": 860,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
           "dynamicBindingPathList": [],
           "dynamicTriggerPathList": [],
           "leftColumn": 0,
-          "minHeight": 1292,
+          "minHeight": 900,
           "parentColumnSpace": 1,
           "parentRowSpace": 1,
-          "rightColumn": 4896,
+          "rightColumn": 1174,
           "snapColumns": 64,
-          "snapRows": 124,
+          "snapRows": 125,
           "topRow": 0,
           "type": "CANVAS_WIDGET",
           "version": 92,
@@ -27,7 +27,7 @@
         }
       }
     ],
-    "name": "Users",
-    "slug": "users"
+    "name": "Stores",
+    "slug": "stores"
   }
 }

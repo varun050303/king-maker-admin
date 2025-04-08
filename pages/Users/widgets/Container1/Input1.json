@@ -42,7 +42,7 @@
   "mobileRightColumn": 24,
   "mobileTopRow": 24,
   "needsErrorInfo": false,
-  "onSubmit": "{{Api1.run()}}",
+  "onSubmit": "{{Api1.run().then(() => {\n  showAlert('Password Changed Successfully', 'success');\n});}}",
   "parentColumnSpace": 3.75,
   "parentId": "g5gk87tkgs",
   "parentRowSpace": 10,

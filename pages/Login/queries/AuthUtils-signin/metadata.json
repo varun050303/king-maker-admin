@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "67f0feb2cbfcca5f38e990b1_4d35806e-364e-4ce5-a7fd-79bc66155d2b",
-  "id": "Login_AuthUtils.login",
+  "gitSyncId": "67f0feb2cbfcca5f38e990b1_9b0fb00b-8a4b-4a1f-a89e-a14e98949913",
+  "id": "Login_AuthUtils.signin",
   "pluginId": "js-plugin",
   "pluginType": "JS",
   "unpublishedAction": {
@@ -23,8 +23,8 @@
       }
     ],
     "executeOnLoad": false,
-    "fullyQualifiedName": "AuthUtils.login",
-    "name": "login",
+    "fullyQualifiedName": "AuthUtils.signin",
+    "name": "signin",
     "pageId": "Login",
     "userSetOnLoad": false
   }

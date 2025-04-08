@@ -19,14 +19,18 @@
   "pages": [
     {
       "id": "Users",
-      "isDefault": true
-    },
-    {
-      "id": "Login",
       "isDefault": false
     },
     {
+      "id": "Login",
+      "isDefault": true
+    },
+    {
       "id": "Recent Transactions",
+      "isDefault": false
+    },
+    {
+      "id": "Stores",
       "isDefault": false
     }
   ],

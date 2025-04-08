@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "67f0feb2cbfcca5f38e990b1_c91496a2-5e78-4e82-83f3-f695dda25f07",
-  "id": "Login_LoginApi",
+  "gitSyncId": "67f0feb2cbfcca5f38e990b1_2fd66fc5-6ad9-40cb-b485-e3ca0a68aa1a",
+  "id": "Login_login_api",
   "pluginId": "restapi-plugin",
   "pluginType": "API",
   "unpublishedAction": {
@@ -11,18 +11,13 @@
           "value": "application/json"
         }
       ],
-      "body": "{\n\t\"mobileNumber\":{{MobileInput.dialCode + MobileInput.text}},\n\t\"password\":{{PasswordInput.text}}\n}",
+      "body": "{\n\t\"mobileNumber\":{{MobileInput.dialCode+MobileInput.text}},\n\t\"password\":{{PasswordInput.text}}\n}",
       "bodyFormData": [],
       "encodeParamsToggle": true,
       "formData": {
         "apiContentType": "application/json"
       },
-      "headers": [
-        {
-          "key": "auth_token",
-          "value": "{{appsmith.store.auth_token}}"
-        }
-      ],
+      "headers": [],
       "httpMethod": "POST",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
@@ -45,13 +40,10 @@
     "dynamicBindingPathList": [
       {
         "key": "body"
-      },
-      {
-        "key": "headers[0].value"
       }
     ],
     "executeOnLoad": false,
-    "name": "LoginApi",
+    "name": "login_api",
     "pageId": "Login",
     "userSetOnLoad": false
   }
