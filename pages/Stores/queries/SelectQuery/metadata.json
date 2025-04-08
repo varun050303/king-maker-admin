@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM public.\"Store\"\nWHERE \"id\" ilike '%{{data_table.searchText || \"\"}}%'\nORDER BY \"{{data_table.sortOrder.column || 'id'}}\" {{data_table.sortOrder.order || 'ASC'}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
+      "body": "SELECT \n  \"Store\".name,\n  \"User\".name AS manager, \n\t\"Store\".address,\n\t\"Store\".city,\n\t\"Store\".state,\n  \"User\".\"mobileNumber\" AS phone_number\nFROM public.\"Store\"\nJOIN public.\"User\" \nON \"Store\".\"managerId\" = \"User\".\"id\"",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,6 +22,7 @@
       "name": "Untitled datasource 1",
       "pluginId": "postgres-plugin"
     },
+    "dynamicBindingPathList": [],
     "executeOnLoad": true,
     "name": "SelectQuery",
     "pageId": "Stores",

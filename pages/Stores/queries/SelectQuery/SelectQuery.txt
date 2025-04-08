@@ -1,5 +1,10 @@
-SELECT * FROM public."Store"
-WHERE "id" ilike '%{{data_table.searchText || ""}}%'
-ORDER BY "{{data_table.sortOrder.column || 'id'}}" {{data_table.sortOrder.order || 'ASC'}}
-LIMIT {{data_table.pageSize}}
-OFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};
+SELECT 
+  "Store".name,
+  "User".name AS manager, 
+	"Store".address,
+	"Store".city,
+	"Store".state,
+  "User"."mobileNumber" AS phone_number
+FROM public."Store"
+JOIN public."User" 
+ON "Store"."managerId" = "User"."id"
