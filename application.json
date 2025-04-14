@@ -41,6 +41,10 @@
     {
       "id": "Stores",
       "isDefault": false
+    },
+    {
+      "id": "Banners",
+      "isDefault": false
     }
   ],
   "unpublishedApplicationDetail": {

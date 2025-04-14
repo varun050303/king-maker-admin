@@ -1,0 +1,8 @@
+UPDATE public."Banner" SET
+		"id" = '{{update_form.fieldState.id.isVisible ? update_form.formData.id : update_form.sourceData.id}}',
+		"fileId" = '{{update_form.fieldState.fileId.isVisible ? update_form.formData.fileId : update_form.sourceData.fileId}}',
+    "fileUrl" = '{{update_form.fieldState.fileUrl.isVisible ? update_form.formData.fileUrl : update_form.sourceData.fileUrl}}',
+		"fileMimeType" = '{{update_form.fieldState.fileMimeType.isVisible ? update_form.formData.fileMimeType : update_form.sourceData.fileMimeType}}',
+		"createdAt" = '{{update_form.fieldState.createdAt.isVisible ? update_form.formData.createdAt : update_form.sourceData.createdAt}}',
+		"updatedAt" = '{{update_form.fieldState.updatedAt.isVisible ? update_form.formData.updatedAt : update_form.sourceData.updatedAt}}'
+WHERE "id" = {{data_table.selectedRow.id}};
