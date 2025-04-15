@@ -258,7 +258,7 @@
       "id": "customColumn2",
       "index": 7,
       "isCellEditable": false,
-      "isCellVisible": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (!!data_table.selectedRowIndex)) : !!data_table.selectedRowIndex })()}}",
+      "isCellVisible": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( !isNaN(data_table.selectedRowIndex) )) :  !isNaN(data_table.selectedRowIndex)  })()}}",
       "isDerived": true,
       "isDisabled": false,
       "isDiscardVisible": true,
