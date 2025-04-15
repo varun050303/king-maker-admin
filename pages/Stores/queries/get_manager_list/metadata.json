@@ -1,16 +1,16 @@
 {
-  "gitSyncId": "67f0feb2cbfcca5f38e990b1_f1f21ab5-3f73-4656-a2a0-d492a9927c05",
-  "id": "Stores_SelectQuery",
+  "gitSyncId": "67f0feb2cbfcca5f38e990b1_50b0991a-5128-4950-80af-af4d04e2f044",
+  "id": "Stores_get_manager_list",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT \n  \"Store\".name,\n  \"User\".name AS manager, \n\t\"Store\".address,\n\t\"Store\".city,\n\t\"Store\".state,\n  \"User\".\"mobileNumber\" AS phone_number\nFROM public.\"Store\"\nJOIN public.\"User\" \nON \"Store\".\"managerId\" = \"User\".\"id\"",
+      "body": "SELECT id, name FROM \"User\" WHERE role = 'STORE_MANAGER';",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": false
+          "value": true
         }
       ],
       "timeoutInMillisecond": 10000
@@ -24,8 +24,8 @@
     },
     "dynamicBindingPathList": [],
     "executeOnLoad": true,
-    "name": "SelectQuery",
+    "name": "get_manager_list",
     "pageId": "Stores",
-    "userSetOnLoad": true
+    "userSetOnLoad": false
   }
 }

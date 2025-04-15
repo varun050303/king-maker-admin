@@ -1,0 +1,24 @@
+INSERT INTO "Store" (
+  id,
+  name,
+  address,
+  city,
+  state,
+  country,
+  pincode,
+  "managerId",
+  "createdAt",
+  "updatedAt"
+)
+VALUES (
+  {{generateUUID.v4()}},
+  {{insert_form.formData.name}},
+  {{insert_form.formData.address}},
+  {{insert_form.formData.city}},
+  {{insert_form.formData.state}},
+  'India', -- 🛠️ Added missing comma + used single quotes
+  {{insert_form.formData.pincode}},
+  {{insert_form.formData.manager}},
+  NOW(),  -- or use: {{moment().format('YYYY-MM-DD HH:mm:ss')}}
+  NOW()
+);

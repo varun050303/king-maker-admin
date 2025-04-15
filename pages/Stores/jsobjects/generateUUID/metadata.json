@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "67f0feb2cbfcca5f38e990b1_36630bee-acfb-4c13-9255-9505a9a11654",
+  "id": "Stores_generateUUID",
+  "unpublishedCollection": {
+    "name": "generateUUID",
+    "pageId": "Stores",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

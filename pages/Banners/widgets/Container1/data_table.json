@@ -36,7 +36,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1744705312341,
+  "columnUpdatedAt": 1744731687308,
   "columnWidthMap": {
     "createdAt": 151.99999999999994,
     "fileId": 291,
@@ -119,11 +119,17 @@
     },
     {
       "key": "primaryColumns.customColumn2.menuColor"
+    },
+    {
+      "key": "primaryColumns.customColumn2.isCellVisible"
     }
   ],
   "dynamicPropertyPathList": [
     {
       "key": "tableData"
+    },
+    {
+      "key": "primaryColumns.customColumn2.isCellVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -252,7 +258,7 @@
       "id": "customColumn2",
       "index": 7,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (!!data_table.selectedRowIndex)) : !!data_table.selectedRowIndex })()}}",
       "isDerived": true,
       "isDisabled": false,
       "isDiscardVisible": true,
