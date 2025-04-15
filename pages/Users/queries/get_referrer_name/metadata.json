@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "name": "get_referrer_name",
     "pageId": "Users",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }

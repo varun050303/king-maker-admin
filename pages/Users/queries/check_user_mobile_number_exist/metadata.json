@@ -30,6 +30,6 @@
     "executeOnLoad": false,
     "name": "check_user_mobile_number_exist",
     "pageId": "Users",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }

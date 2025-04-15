@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT \n  id, \n  name, \n  \"mobileNumber\", \n  role,\n\tstatus,\n  \"createdAt\",\n\t\"updatedAt\",\n\t\"referredById\",\n\t\"password\"\nFROM \"User\"\nORDER BY \"createdAt\" DESC;",
+      "body": "SELECT \n  id, \n  name, \n  \"mobileNumber\", \n  role,\n\tstatus,\n  \"createdAt\",\n\t\"updatedAt\",\n\t\"referredById\",\n\t\"password\",\n\t\"aadharCard\"\nFROM \"User\"\nORDER BY \"createdAt\" DESC;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

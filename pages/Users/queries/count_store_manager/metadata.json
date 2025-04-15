@@ -26,6 +26,6 @@
     "executeOnLoad": true,
     "name": "count_store_manager",
     "pageId": "Users",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }

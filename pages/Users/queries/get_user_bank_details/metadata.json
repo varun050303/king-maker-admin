@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "name": "get_user_bank_details",
     "pageId": "Users",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }

@@ -16,7 +16,7 @@
         {
           "key": "file",
           "type": "File",
-          "value": "{{FilePicker1.files[0].data}}"
+          "value": "{{FilePicker1?.files[0]?.data}}"
         }
       ],
       "encodeParamsToggle": true,

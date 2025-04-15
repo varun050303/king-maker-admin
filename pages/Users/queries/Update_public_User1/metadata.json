@@ -26,6 +26,6 @@
     "executeOnLoad": false,
     "name": "Update_public_User1",
     "pageId": "Users",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }

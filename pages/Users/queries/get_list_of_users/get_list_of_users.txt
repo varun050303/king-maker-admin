@@ -7,6 +7,7 @@ SELECT
   "createdAt",
 	"updatedAt",
 	"referredById",
-	"password"
+	"password",
+	"aadharCard"
 FROM "User"
 ORDER BY "createdAt" DESC;

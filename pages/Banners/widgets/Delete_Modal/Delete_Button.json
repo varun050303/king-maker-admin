@@ -25,7 +25,7 @@
   "isVisible": "true",
   "labelTextSize": "0.875rem",
   "leftColumn": 46,
-  "onClick": "{{delete_banner_api.run()}}/",
+  "onClick": "delete_banner_api.run(() => {\ncloseModal(Delete_Modal.name)\n});",
   "parentId": "zi8fjakv8o",
   "recaptchaType": "V3",
   "resetFormOnClick": true,

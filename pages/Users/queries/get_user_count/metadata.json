@@ -23,9 +23,9 @@
       "pluginId": "postgres-plugin"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "name": "get_user_count",
     "pageId": "Users",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }
