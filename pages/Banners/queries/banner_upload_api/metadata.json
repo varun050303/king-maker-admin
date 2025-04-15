@@ -26,7 +26,7 @@
       "headers": [
         {
           "key": "Cookie",
-          "value": "{{appsmith.store.auth_token}}"
+          "value": "auth_token={{appsmith.store.auth_token}}"
         }
       ],
       "httpMethod": "POST",
