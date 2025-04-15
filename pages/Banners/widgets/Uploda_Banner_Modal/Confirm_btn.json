@@ -32,7 +32,7 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "onClick": "{{banner_upload_api.run().then(() => {\n  showAlert('upload successfull', 'success');\n});}}",
+  "onClick": "{{banner_upload_api.run().then(() => {\n  showAlert('upload successfull', 'success');\n  closeModal(Uploda_Banner_Modal.name);\n});}}",
   "parentId": "bqsmmu4wil",
   "placement": "CENTER",
   "recaptchaType": "V3",
